@@ -8,4 +8,3 @@ def callback(msg):
 rospy.init_node('subscriber_algorithm')
 sub = rospy.Subscriber('Twist_msg', Twist, callback)
 rospy.spin()
-
