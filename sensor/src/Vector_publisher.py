@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 import rospy
 from geometry_msgs.msg import Pose2D
-from Vector3.msg import Vector3
+from Twist.msg import Twist
 
-rospy.init_node('Vector3_publisher')
-pub = rospy.Publisher('Vector3_msg', Vector3, queue_size=1)
-msg = TimePose()
+rospy.init_node('Twist_publisher')
+pub = rospy.Publisher('Twist_msg', Twist, queue_size=1)
+msg = Twist()
 rate = rospy.Rate(1)
 while not rospy.is_shutdown():
     msg.timestamp = rospy.get_rostime()
