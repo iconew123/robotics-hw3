@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(sensor)
+project(algorithm)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
   rospy
-  Vector3_msg
+  Twist_msg
 )
 
 # Generate messages in the 'msg' folder
 add_message_files(
  FILES
- Vector3.msg
+ Twist.msg
 )
 
 
@@ -19,9 +19,9 @@ add_message_files(
 generate_messages(
  DEPENDENCIES
  geometry_msgs
- Vector3_msgs
+ Twist_msgs
 )
 
 catkin_package(
- CATKIN_DEPENDS geometry_msgs rospy Vector3_msgs
+ CATKIN_DEPENDS geometry_msgs rospy Twist_msgs
 )
