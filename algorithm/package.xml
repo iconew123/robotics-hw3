@@ -2,7 +2,7 @@
 <package format="2">
   <name>algorithm</name>
   <version>0.1.0</version>
-  <description>The service_custom package</description>
+  <description>The algorithm package</description>
   <maintainer email="iconew123@gmail.com">pi</maintainer>
   <license>BSD</license>
 
