@@ -5,13 +5,13 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
   rospy
-  Twist_msg
+  Vector3_msg
 )
 
 # Generate messages in the 'msg' folder
 add_message_files(
  FILES
- Twist.msg
+ Vector3.msg
 )
 
 
@@ -19,9 +19,10 @@ add_message_files(
 generate_messages(
  DEPENDENCIES
  geometry_msgs
- Twist_msgs
+ Vector3_msgs
 )
 
 catkin_package(
  CATKIN_DEPENDS geometry_msgs rospy Vector3_msgs
 )
+
