@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(sensor)
+project(algorithm)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
@@ -25,3 +25,4 @@ generate_messages(
 catkin_package(
  CATKIN_DEPENDS geometry_msgs rospy Vector3_msgs
 )
+
