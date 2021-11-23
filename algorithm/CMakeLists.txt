@@ -23,5 +23,5 @@ generate_messages(
 )
 
 catkin_package(
- CATKIN_DEPENDS geometry_msgs rospy Twist_msgs
+ CATKIN_DEPENDS geometry_msgs rospy Vector3_msgs
 )
